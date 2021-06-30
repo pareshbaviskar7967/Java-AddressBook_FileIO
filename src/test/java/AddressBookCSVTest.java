@@ -1,9 +1,8 @@
+import org.junit.Assert;
+import org.junit.Test;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.junit.Assert;
-import org.junit.Test;
 
 public class AddressBookCSVTest {
     ArrayList<Person> person = new ArrayList<>();
@@ -17,36 +16,36 @@ public class AddressBookCSVTest {
 
     @Test
     public void givenCSVFile_WhenWritten_ShouldReturn_True() throws IOException {
-        String ADDRESS_BOOK_CSV_FILE_PATH = "C:\\Users\\iamat\\eclipse-workspace\\java-address-book-file-IO\\resources";
+        String ADDRESS_BOOK_CSV_FILE_PATH = "C:\\Users\\pares\\eclipse-workspace\\Java-AddressBook-FileIO";
         List<String[]> records = new ArrayList<>();
         String[] person1 = {
-                "Atharva",
-                "Joshi",
+                "Paresh",
+                "Baviskar",
                 "Sagar park",
                 "Maharashtra",
-                "atharva@email",
-                "9665654666",
-                "425201"
+                "paresh123@gmail.com",
+                "8406095441",
+                "425001"
         };
 
         String[] person2 = {
-                "Gaurav",
-                "Joshi",
+                "Pratham",
+                "Baviskar",
                 "MN park",
                 "Maharashtra",
-                "gaurav@email",
+                "pratham123@gmail.com",
                 "9552495055",
                 "425201"
         };
 
         String[] person3 = {
-                "Piyush",
-                "Joshi",
-                "BL Farms",
+                "Chetan",
+                "Baviskar",
+                "Borivali",
                 "Maharashtra",
-                "piyush@email",
+                "chetan123@gmail.com",
                 "8482809097",
-                "425201"
+                "400101"
         };
 
         records.add(person1);
